@@ -7,7 +7,7 @@ public class TipCalculator {
         people = 6; 
         percent = 25;
         cost = 52.27;              
-        double tip = (int) ((cost * percent / 100) * 100) / 100 ; //int should remove all decimals below hundredths but doesn't work as intended
+        double tip = (int) ((cost * percent / 100) * 100) / 100.00 ; 
 
         result.append("-------------------------------\n");
         result.append("Total bill before tip: " + cost); //concatenate to this string. DO NOT ERASE AND REWRITE
